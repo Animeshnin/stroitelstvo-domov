@@ -1,0 +1,41 @@
+include header 
+include menu 
+div(class='wrap')
+    div(class='content')
+        div(class='container')
+            div(class='row')
+                div(class='col col-md-12')
+                    h3(class='cart-header' id='cart-nav') Cart
+                    div(id='cart-nav')
+                div(class='col col-md-12')  
+                div(class='col col-md-6')
+                    form#sk-vektor(action="")
+                        div(class='form-control')
+                            label(for="username") Имя
+                            input(
+                                type="text",
+                                id='username',
+                                placeholder='Введите свое имя')
+                        div(class='form-control')
+                            label(for="phone") Телефон
+                            input(
+                                type="text",
+                                id='phone',
+                                placeholder='89111222333'
+                                )
+                        div(class='form-control')
+                            label(for="email") Email
+                            input(
+                                type='text',
+                                id='email',
+                                placeholder='mail@mail.com'
+                            )
+                        div(class='form-control')
+                            label(for="address") Адресс
+                            textarea(
+                                id='address',
+                                placeholder='Откуда вы?')
+                        div(class='form-control text-right')
+                            button(class='button-primary recCall-a', type='submit') Отправить
+include footer 
+script(src='js/order.js')

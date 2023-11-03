@@ -1,0 +1,13 @@
+include header
+include menu
+div(class='wrap')
+  div(class='content')
+    div(class='container')
+      div(class='row')
+        div(class='col col-md-12')
+          div(id='cart-navv') #{cat[0]['description']}
+          //  перебирает элементы в массиве 
+        each val, index in goods
+          include card.pug
+include footer 
+

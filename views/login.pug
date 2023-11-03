@@ -1,0 +1,22 @@
+include header
+link(rel='stylesheet' href='css/login.css') 
+.container
+  .img
+    img.post(src='img/logo.svg' alt='')
+  .login-container
+    form(action='/login', method="POST")
+      h2.welcom
+      .input-div.one
+        .i
+          i.fas.fa-user
+        div
+          h5 Username
+          input.input(type='text' name='login' id='login')
+      .input-div.two
+        .i
+          i.fas.fa-lock
+        div
+          h5 Password
+          input.input(type='password' name='password' id='password')
+      input.btn(class='recCall-a' name='password' type='submit' value='Login')
+script(src='js/login.js')
